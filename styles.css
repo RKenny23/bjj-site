@@ -90,10 +90,27 @@ header li {
   background-color: var(--primary-color);
   color: #fff;
   height: 80px;
+  /* position: fixed;  */
+  /* top: 0; Position the navbar at the top of the page */
+  /* overflow: hidden; */
+  /* width: 100%; */
+}
+
+.logo {
+  display: flex;
+  color: var(--secondary-color);
+}
+
+.logo h1 {
+  padding-left: 10px;
+}
+
+.navbar img {
+  height: 60px;
 }
 
 .navbar h1 a {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
 }
 
 .navbar ul {
@@ -111,4 +128,110 @@ header li {
 .navbar a:hover {
   color: var(--secondary-color);
   transition: 0.3s;
+}
+
+/* SLideshow */
+.slideshow-container {
+  /* max-width: 1000px; */
+  /* position: relative; */
+  /* margin: auto; */
+}
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+} */
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 10%;
+  user-select: none;
+  margin: 20px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  /* border-radius: 50%; */
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.welcome {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.welcome p {
+  max-width: 80%;
+  margin: 18px auto;
+  font-size: 1.5rem;
+}
+
+.center-line {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  border-top: 1px solid #bbb;
+  margin: auto;  
+}
+
+.trial {
+  color: #fff;
+  background-color: var(--primary-color);
+  height: 150px;
+  padding: 2rem 0;
+}
+
+.news {
+  text-align: center;
+  height: 150px;
+  margin: 4rem auto;
 }
