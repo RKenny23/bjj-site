@@ -17,7 +17,7 @@
 
 body {
   font-family: "Lato", sans-serif;
-  color: #333;
+  color: var(--primary-color);
   line-height: 1.6;
 }
 
@@ -27,7 +27,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--primary-color);
 }
 
 h1,
@@ -38,6 +38,7 @@ h2 {
 }
 
 p {
+  font-size: 1.1rem;
   margin: 10px 0;
 }
 
@@ -70,7 +71,7 @@ header a:hover {
   transition: 0.3s;
 }
 
-header ul {
+header ul, footer ul {
   display: flex;
 }
 
@@ -109,10 +110,6 @@ header li {
   height: 60px;
 }
 
-.navbar h1 a {
-  /* color: var(--secondary-color); */
-}
-
 .navbar ul {
   display: flex;
   font-size: 1.2rem;
@@ -130,7 +127,7 @@ header li {
   transition: 0.3s;
 }
 
-/* SLideshow */
+/* Slideshow */
 .slideshow-container {
   /* max-width: 1000px; */
   /* position: relative; */
@@ -149,7 +146,7 @@ header li {
   top: 50%;
   width: auto;
   padding: 10px;
-  color: white;
+  color: var(--secondary-color);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -223,11 +220,36 @@ header li {
   margin: auto;  
 }
 
-.trial {
+.trial, .footer {
   color: #fff;
   background-color: var(--primary-color);
-  height: 150px;
+  height: 210px;
   padding: 2rem 0;
+}
+
+.trial h2 {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  /* display: inline-block; */
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 180px;
+  height: 54px;
+  /* justify-self: center; */
+  /* margin-top: 2rem; */
+  /* text-align: center; */
+  margin: auto 2rem;
+}
+
+.btn:hover {
+  background-color: #000;
 }
 
 .news {
@@ -235,3 +257,59 @@ header li {
   height: 150px;
   margin: 4rem auto;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer {
+  color: #fff;
+  background-color: var(--primary-color);
+  height: 410px;
+  padding: 5rem 0;
+}
+
+.footer h2 {
+  margin-bottom: 0;
+}
+
+.under-line {
+  display: inline-block;
+  width: 17px;
+  border-bottom: 1px solid #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: var(--secondary-color);
+}
+
+.footer li:nth-child(2) {
+  padding-left: 14px;
+}
+
+.footer h3 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+.schedule h2 {
+  margin-top: 4rem;
+}
+
+
+
+
