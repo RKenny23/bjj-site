@@ -44,8 +44,9 @@ p {
 
 .container {
   max-width: 1100px;
+  width: 95%;
   margin: 0 auto;
-  /* overflow: auto; */
+  overflow: hidden;
 }
 
 /* Header */
@@ -71,7 +72,8 @@ header a:hover {
   transition: 0.3s;
 }
 
-header ul, footer ul {
+header ul,
+footer ul {
   display: flex;
 }
 
@@ -127,6 +129,10 @@ header li {
   transition: 0.3s;
 }
 
+.navbar .current a {
+  color: var(--secondary-color);
+}
+
 /* Slideshow */
 .slideshow-container {
   /* max-width: 1000px; */
@@ -140,7 +146,8 @@ header li {
 } */
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -161,10 +168,10 @@ header li {
   /* border-radius: 50%; */
 }
 
-
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.7);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* The dots/bullets/indicators */
@@ -179,7 +186,8 @@ header li {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -192,13 +200,21 @@ header li {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .welcome {
@@ -217,10 +233,11 @@ header li {
   width: 70px;
   height: 1px;
   border-top: 1px solid #bbb;
-  margin: auto;  
+  margin: auto;
 }
 
-.trial, .footer {
+.trial,
+.footer {
   color: #fff;
   background-color: var(--primary-color);
   height: 210px;
@@ -295,6 +312,15 @@ header li {
   color: var(--secondary-color);
 }
 
+.footer p i {
+  transform: scaleX(-1);
+  padding-left: 5px;
+  font-size: 0.9rem;
+  vertical-align: top;
+  line-height: 1.8;
+
+}
+
 .footer li:nth-child(2) {
   padding-left: 14px;
 }
@@ -308,8 +334,21 @@ header li {
 
 .schedule h2 {
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
+.schedule p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
 
+.schedule .btn {
+  display: block;
+  margin: 3rem 0 2rem 0;
+  width: 120px;
+}
 
-
+.schedule img {
+  margin-bottom: 4rem;
+  width: 100%;
+}
