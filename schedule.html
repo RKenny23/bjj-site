@@ -35,10 +35,13 @@
           <img src="images/logo.png" alt="" />
           <h1>Roboto BJJ</h1>
         </a>
-        <nav>
-          <ul>
+        <nav class="collapsible">
+          <svg class="icon nav__toggler">
+            <use xlink:href="images/sprite.svg#Hamburger Menu"></use>
+          </svg>
+          <ul class="nav__links collapsible__content">
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="schedule.html">Schedule</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
             <li><a href="instructors.html">Instructors</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -119,11 +122,14 @@
           </ul>
         </div>
       </div>
-      <h3>
-        &copy; 2021 Roboto Brazilian Jiu-Jitsu, all rights reserved. Designed by
-        Ryan Kenny
-      </h3>
+      <div class="container">
+        <h3>
+          &copy; 2021 Roboto Brazilian Jiu-Jitsu, all rights reserved. Designed by
+          Ryan Kenny
+        </h3>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
 </html>
+

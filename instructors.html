@@ -31,13 +31,16 @@
     <!-- Navbar -->
     <div class="navbar">
       <div class="container flex">
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <img src="images/logo.png" alt="" />
           <h1>Roboto BJJ</h1>
         </a>
-        <nav>
-          <ul>
-            <li"><a href="index.html">Home</a></li>
+        <nav class="collapsible">
+          <svg class="icon nav__toggler">
+            <use xlink:href="images/sprite.svg#Hamburger Menu"></use>
+          </svg>
+          <ul class="nav__links collapsible__content">
+            <li><a href="index.html">Home</a></li>
             <li><a href="schedule.html">Schedule</a></li>
             <li class="current"><a href="instructors.html">Instructors</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -48,10 +51,14 @@
       </div>
     </div>
     <!-- Instructors -->
-    <div class="container instructors grid">
-      <h2>Our instructors</h2>
-      <p>Head instructor and owner Joao Luz is a registered IBJJF black belt rewarded from Paulo Rezende. He has earned his 2nd degree and been associated under legendary Marcelo Garcia since 2009, a long time friend and training partner. After twenty plus years of training, Professor Joao has accumulated a wealth of practical knowledge that he passes down indiscriminately to his students. It’s easily said that a team is nothing without it’s leader, and that is what Professor Joao represents on the mat; a constant presence, guiding and shaping everyone who steps into our building into competent Jiu-Jitsu practitioners and generally better human beings.</p>
+    <div class="container instructors grid grid-even">
+      <div>
+        <h2>Our Instructors</h2>
+        <p>Head instructor and owner Joao Robotao is a registered IBJJF black belt rewarded from Paulo Rezende. He has earned his 2nd degree and been associated under legendary Marcelo Garcia since 2009, a long time friend and training partner. After twenty plus years of training, Professor Joao has accumulated a wealth of practical knowledge that he passes down indiscriminately to his students. It’s easily said that a team is nothing without it’s leader, and that is what Professor Joao represents on the mat; a constant presence, guiding and shaping everyone who steps into our building into competent Jiu-Jitsu practitioners and generally better human beings.</p>
+      </div>
+      <img src="images/DxMUimW_480x480.webp" alt="">
     </div>
+
 
     <!-- footer -->
     <footer class="footer">
