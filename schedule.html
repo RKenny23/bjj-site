@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="/script.js" defer></script>
+    <script src="/scripts/script.js" defer></script>
     <title>Roboto | Brazilian Jiu-Jitsu</title>
   </head>
-  <body>
+  <body id="schedule">
     <!-- Header -->
     <header>
       <div class="container flex">
@@ -35,7 +35,10 @@
         <nav class="navbar">
           <a class="logo" href="index.html">
             <img src="images/logo.png" alt="" />
-            <h1>Roboto <br> Jiu-Jitsu</h1>
+            <h1>
+              Roboto <br />
+              Jiu-Jitsu
+            </h1>
           </a>
           <a href="#" class="nav-toggler">
             <span class="bar"></span>
@@ -44,8 +47,8 @@
           </a>
           <div class="nav-links">
             <ul>
-              <li class="current"><a href="index.html">Home</a></li>
-              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li class="current"><a href="schedule.html">Schedule</a></li>
               <li><a href="instructors.html">Instructors</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -129,12 +132,15 @@
       </div>
       <div class="container">
         <h3>
-          &copy; 2021 Roboto Brazilian Jiu-Jitsu, all rights reserved. Designed by
-          Ryan Kenny
+          &copy; 2021 Roboto Brazilian Jiu-Jitsu, all rights reserved. Designed
+          by Ryan Kenny
         </h3>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      $(function(){
+        $("#schedule").load("schedule.html");
+      });
+      </script>
   </body>
 </html>
-

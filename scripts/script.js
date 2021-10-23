@@ -27,18 +27,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// Collapsible navbar
-// const collapsibles = document.querySelectorAll(".collapsible");
-// collapsibles.forEach((item) =>
-//   item.addEventListener("click", function () {
-//     this.classList.toggle("collapsible--expanded");
-//   })
-// );
 
-const toggleButton = document.getElementsByClassName('nav-toggler')[0]
-const navbarLinks = document.getElementsByClassName('nav-links')[0]
+
+const toggleButton = document.getElementsByClassName('nav-toggler')[0];
+const navbarLinks = document.getElementsByClassName('nav-links')[0];
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
-})
+});
 

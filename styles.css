@@ -18,7 +18,7 @@ body {
   font-family: "Lato", sans-serif;
   color: var(--primary-color);
   line-height: 1.6;
-  /* min-width: 235px; */
+  min-width: 260px;
 }
 
 a {
@@ -42,8 +42,6 @@ p {
   max-width: 1100px;
   width: 90%;
   margin: 0 auto;
-  min-width: 260px;
-  height: inherit;
 }
 
 /* Header */
@@ -52,6 +50,8 @@ header .flex {
   justify-content: space-between;
   align-items: center;
   height: 40px;
+  min-width: 245px;
+
 }
 
 header h1 {
@@ -91,9 +91,12 @@ header ul li:last-child {
 
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  /* box-shadow: none !important; */
+
 }
 
 .logo {
@@ -141,8 +144,8 @@ header ul li:last-child {
 
 .nav-toggler {
   position: absolute;
-  top: 4.3rem;
-  right: 5vw;
+  top: 1.8rem;
+  right: 0;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -158,10 +161,14 @@ header ul li:last-child {
 }
 
 /* Slideshow */
-/* .slideshow-container {
+.slideshow-container {
+  overflow: hidden;
+}
+
+.slideshow-container img {
   width: 100%;
-  margin: auto;
-} */
+  min-width: 500px;
+}
 
 /* Next & previous buttons */
 .prev,
@@ -377,7 +384,7 @@ header ul li:last-child {
   margin-left: 2rem;
 }
 
-/* Adjust for various screen sizes */
+/* Adjust for smaller screen sizes */
 @media (max-width: 927px) {
   .nav-toggler {
     display: flex;
@@ -385,10 +392,12 @@ header ul li:last-child {
 
   .nav-links {
     opacity: 0;
+    visibility: hidden;
     width: 100%;
     flex-direction: column;
-    z-index: 1;
     transition: all 0.3s;
+    height: 100%;
+    margin-top: -1px;
   }
 
   .navbar {
@@ -414,6 +423,7 @@ header ul li:last-child {
 
   .nav-links.active {
     opacity: 1;
+    visibility: visible;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background-color: var(--see-through);
@@ -462,6 +472,6 @@ header ul li:last-child {
 
 @media (max-width: 300px) {
   a h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
